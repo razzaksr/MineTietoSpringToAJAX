@@ -10,7 +10,7 @@ import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 import services.loans.*;
 
 @Endpoint
-@CrossOrigin(origins = "*")
+//@CrossOrigin(origins = "*")
 public class SoapEndpoints {
     @Autowired
     private LoansRepository loansRepository;

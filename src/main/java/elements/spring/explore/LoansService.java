@@ -34,7 +34,7 @@ public class LoansService implements LoansRepository{
 
     @Override
     public String deleteById(int id) {
-        jdbcTemplate.update("delete from mybank_available_loans where id=?",new Object[]{id});
+        jdbcTemplate.update("delete from mybank_available_loans where loan_number=?",new Object[]{id});
         return "loans deleted";
     }
 
